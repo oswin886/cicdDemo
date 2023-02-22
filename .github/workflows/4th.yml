@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: 1 step
-      - run: |
+        run: |
           echo this is 1111
   my_second_job:
     name: My second job
