@@ -8,6 +8,8 @@ on:
 
 jobs:
   firstjob:
+    runs-on: ubuntu-latest
+    # checkout your respository
     steps:
       - uses: actions/checkout@v3
     
