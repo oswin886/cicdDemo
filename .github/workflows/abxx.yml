@@ -1,0 +1,16 @@
+name: MYCI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  firstjob:
+    # checkout your respository
+    - uses: actions/checkout@v3
+    
+    run: |
+      echo hello
+      echo done
