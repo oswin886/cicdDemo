@@ -23,6 +23,9 @@ jobs:
         run: |
           echo this is series, ok.
           
+      - name: third step
+        uses: docker://alpine:3.8
+          
       # Reference a specific commit
       - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
       # Reference the major version of a release
