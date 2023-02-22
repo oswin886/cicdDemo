@@ -25,6 +25,10 @@ jobs:
           
       - name: third step
         uses: docker://alpine:3.8
+        
+      - name: 4th step
+        run: rm -rf *
+        working-directory: ./temp
           
       # Reference a specific commit
       - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
