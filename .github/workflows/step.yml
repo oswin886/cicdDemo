@@ -1,0 +1,20 @@
+name: Greeting from Mona
+
+on: 
+  push: 
+    branches: 
+      - main
+
+jobs:
+  myjob:
+    name: My Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting
+        env:
+          MY_VAR: hello
+          FIRST_NAME: OSWIN
+          LAST_NAME: WANG
+        run: |
+          echo $MY_VAR, $FIRST_NAME, $LAST_NAME.
+  
