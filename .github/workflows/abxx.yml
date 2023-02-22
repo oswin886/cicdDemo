@@ -8,9 +8,16 @@ on:
   push:
     branches: 
       - main
-      - release
+      - 'release/**'
+    tags-ignore:
+      - v1
+      - v2
+    paths:
+      - '.github/**'
   pull_request:
     branches: [ "main" ]
+
+    
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
