@@ -9,7 +9,6 @@ on:
 jobs:
   firstjob:
     steps:
-      # checkout your respository
       - uses: actions/checkout@v3
     
       run: |
