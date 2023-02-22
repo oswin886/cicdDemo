@@ -28,7 +28,8 @@ jobs:
         
       - name: 4th step
         run: echo $PATH
-        shell: bash
+        shell: bash1
+        continue-on-error: true
       
       - name: 5th step
         run: |
