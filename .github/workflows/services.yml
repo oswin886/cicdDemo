@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: first step
         run: | 
-          echo curl http://localhost:80
+          curl http://localhost:80
     services:
       nginx: 
         image: nginx
