@@ -15,7 +15,10 @@ jobs:
           MY_VAR: hello
           FIRST_NAME: OSWIN
           LAST_NAME: WANG
-        if: ${{github.event_name == 'pull_request'}}
         run: |
           echo $MY_VAR, $FIRST_NAME, $LAST_NAME.
-  
+      
+      - name: next step
+        if: ${{ failure() }}
+        run: |
+          echo this is series, ok.
