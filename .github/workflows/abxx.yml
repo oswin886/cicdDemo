@@ -8,9 +8,10 @@ on:
 
 jobs:
   firstjob:
-    # checkout your respository
-    - uses: actions/checkout@v3
+    steps:
+      # checkout your respository
+      - uses: actions/checkout@v3
     
-    run: |
-      echo hello
-      echo done
+      run: |
+        echo hello
+        echo done
