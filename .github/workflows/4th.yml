@@ -16,15 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: 1 step
-        run: |
+      - run: |
           echo this is 1111
   my_second_job:
     name: My second job
     needs: my_first_job
     runs-on: ubuntu-latest
-    if: github.repository == 'oswin886/cicdDemo'
+    if: github.repository == '1oswin886/cicdDemo'
     steps:
       - name: 2 step
-        run: | 
+      - run: | 
           echo this is 222
   
