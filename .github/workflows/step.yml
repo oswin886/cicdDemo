@@ -19,6 +19,6 @@ jobs:
           echo $MY_VAR, $FIRST_NAME, $LAST_NAME.
       
       - name: next step
-        if: ${{ failure() }}
+        if: ${{ success() }}
         run: |
           echo this is series, ok.
