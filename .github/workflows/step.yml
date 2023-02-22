@@ -31,8 +31,10 @@ jobs:
         shell: bash
       
       - name: 5th step
-        run: echo %PATH%
-        shell: cmd
+        run: |
+          import os
+          print(os.environ['PATH'])
+        shell: python
           
       # Reference a specific commit
       - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
