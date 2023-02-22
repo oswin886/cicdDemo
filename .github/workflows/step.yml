@@ -38,10 +38,8 @@ jobs:
         shell: python
       
       - name: 6th step
-        uses: actions/hello_world@main
-        with:
-          first_name: hello
-          last_name: world
+        run: |
+          echo 6th
           
       # Reference a specific commit
       - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
