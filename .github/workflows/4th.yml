@@ -13,7 +13,8 @@ on:
 jobs:
   my_first_job:
     name: My first job
-    runs-on: ubuntu-latest
+    runs-on: 
+      group: ubuntu-runner
     steps: 
       - name: 1 step
         run: |
